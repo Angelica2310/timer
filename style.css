@@ -52,26 +52,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 10rem;
+  font-size: 20rem;
   font-weight: 700;
   font-family: "Delius Swash Caps", cursive;
   margin-top: 10%;
 }
 
 .progress-container {
-  height: 20px;
+  height: 50px;
   width: 50%;
   position: relative;
   display: flex;
   align-items: center;
   background-color: snow;
-  border: 1px solid white;
+  /* border: 1px solid black; */
   border-radius: 10px;
+  display: none;
+  margin-top: 70px;
 }
 
 #progress-bar {
   width: 0%;
-  height: 20px;
+  height: 50px;
   background-color: #e37383;
   transition: width 0.5s linear; /* Smooth animation */
   border: 1px solid white;
@@ -81,11 +83,11 @@ body {
 }
 
 #runner {
-  height: 40px;
+  height: 90px;
   position: absolute;
   z-index: 2;
   background-color: transparent;
   left: 0%;
-  top: -25px;
+  top: -50px;
   transition: left 0.5s linear;
 }

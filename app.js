@@ -6,6 +6,7 @@ const timeDisplay = document.getElementById("time-display");
 const alarmSound = document.getElementById("alarm");
 const progressBar = document.getElementById("progress-bar");
 const runnerPet = document.getElementById("runner");
+const progressContainer = document.querySelector(".progress-container");
 
 let timerSecond;
 let ticker;
@@ -25,6 +26,7 @@ function render() {
   // console.log(progressPercentage);
   progressBar.style.width = progressPercentage + "%";
   progressBar.style.display = "block";
+  progressContainer.style.display = "block";
   runnerPet.style.left = runnerPosition + "%";
 }
 
